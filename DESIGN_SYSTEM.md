@@ -2,59 +2,39 @@
 
 ## Color Palette
 
-### Primary Colors (From Logo)
+### Primary Colors (Dark Tones Only)
 
-Our brand identity is built around the colors extracted from our Think Once logo:
+Our brand uses only the darkest tones from the original logo colors for a sophisticated, minimal aesthetic:
 
-#### Primary - Pink/Red (`#E5366A`)
-The signature pink/red from our logo. Use for:
-- Primary CTAs and buttons
-- Important highlights
-- Brand identity elements
-- Interactive elements on hover
+#### Primary 950 (`#47061E`) ⭐ Main Brand Color
+The deepest burgundy/wine tone. Use for:
+- Primary brand identity
+- Logo accents
+- Critical CTAs
+- Main interactive elements
 
 ```css
 /* CSS Variables */
-var(--primary)
-var(--primary-hover)  /* #D21E56 */
-var(--primary-light)  /* #F9A3B8 */
-var(--primary-dark)   /* #B01447 */
+var(--primary)      /* Alias for --primary-950 */
+var(--primary-950)
 
 /* Tailwind Classes */
-bg-primary-500
-text-primary-500
-border-primary-500
+bg-primary-950
+text-primary-950
+border-primary-950
 ```
 
-**Color Scale:**
-- `50`: `#fef2f5` - Lightest tint
-- `100`: `#fde6eb`
-- `200`: `#fccdd8`
-- `300`: `#f9a3b8`
-- `400`: `#f5699a`
-- `500`: `#e5366a` ⭐ **Main Brand Color**
-- `600`: `#d21e56`
-- `700`: `#b01447`
-- `800`: `#921341`
-- `900`: `#7b133c`
-- `950`: `#47061e` - Darkest shade
-
----
-
-### Secondary Colors
-
-#### Neutral Grays
-Used for text, backgrounds, and UI elements
+#### Primary 900 (`#7B133C`)
+Slightly lighter burgundy for hover states and variations.
 
 ```css
 /* CSS Variables */
-var(--secondary)
-var(--foreground)
-var(--background)
+var(--primary-hover) /* Alias for --primary-900 */
+var(--primary-900)
 
 /* Tailwind Classes */
-bg-secondary-500
-text-secondary-700
+bg-primary-900
+text-primary-900
 ```
 
 ---
@@ -188,6 +168,25 @@ bg-info-500
 <p className="text-base text-foreground-secondary leading-relaxed">
   Body text content
 </p>
+```
+
+---
+
+## Typography
+
+### Font Family
+
+#### Primary Font: **Manrope**
+A modern, geometric sans-serif that balances professional legibility with a distinct technical character.
+
+- **Weights used:**
+  - `Regular (400)`: Body text
+  - `Semibold (600)`: UI elements, buttons
+  - `Bold (700)`: Headings
+
+```css
+font-family: var(--font-manrope);
+/* Tailwind: font-sans */
 ```
 
 ---
