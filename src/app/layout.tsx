@@ -16,12 +16,14 @@ export const metadata = {
   description: "Advanced decision management platform",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${manrope.variable} ${geistMono.variable} font-sans antialiased`}
-      >
+      <body className={`${manrope.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
